@@ -1,0 +1,17 @@
+[common]
+server_addr = frps-ip
+server_port = frps-server-port
+auth_token = Admin@123456
+use_encryption = true
+use_compression = true
+tls_enable = true
+
+#下列内容做了字符串替换，如要改变，需改变代码，详见修改代理名称和端口
+[socks522] 
+type = tcp
+remote_port = 50081
+plugin = socks5
+use_compression = true
+#socks5连接口令 [根据实际情况进行配置]
+plugin_user = username
+plugin_passwd = password
