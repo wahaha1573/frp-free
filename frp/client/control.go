@@ -195,8 +195,8 @@ func (ctl *Control) HandleNewProxyResp(inMsg *msg.NewProxyResp) {
 		//fmt.Println(plugin_user+"-----")
 		//fmt.Println(plugin_passwd+"-----")
 		d := ding.Webhook{
-			AccessToken: "3bbbc4f7a31bbb378ba339867e62b60784306e38a618afa0cbfd1f77c2b3b7ba",
-			Secret:      "SECa839e63dee81e2bfc01f5c2d7f0e910d3d47c59749a6cf449f7e2d83e33da2f3",
+			AccessToken: "自行修改",
+			Secret:      "自行修改",
 		}
 		_ = d.SendMessage("ProxyName："+inMsg.ProxyName+"\n"+
 							"连接地址：" + addr + "\n"+
